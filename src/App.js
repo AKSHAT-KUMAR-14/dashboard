@@ -1,10 +1,11 @@
+/* eslint-disable jsx-a11y/control-has-associated-label */
 import React, { useEffect } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { FiSettings } from 'react-icons/fi';
 import { TooltipComponent } from '@syncfusion/ej2-react-popups';
 
 import { Navbar, Footer, Sidebar, ThemeSettings } from './components';
-import { Ecommerce, Orders, Calendar, Mentor, Stacked, Pyramid, Students, Kanban, Line, Area, Bar, Pie, Financial, ColorPicker, ColorMapping, Editor } from './pages';
+import { Ecommerce, Calendar, Mentor, Stacked, Pyramid, Students, Kanban, Line, Area, Bar, Pie, Financial, ColorPicker, ColorMapping, Editor } from './pages';
 import './App.css';
 
 import { useStateContext } from './contexts/ContextProvider';
@@ -69,7 +70,6 @@ const App = () => {
                 <Route path="/ecommerce" element={(<Ecommerce />)} />
 
                 {/* pages  */}
-                <Route path="/orders" element={<Orders />} />
                 <Route path="/mentor" element={<Mentor />} />
                 <Route path="/students" element={<Students />} />
 
@@ -100,3 +100,4 @@ const App = () => {
 };
 
 export default App;
+
